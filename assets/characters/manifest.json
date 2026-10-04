@@ -1,0 +1,19 @@
+{
+  "_hint": "Scene -> sticker mapping. Files must be inside assets/characters/",
+  "default": "",
+
+  "char-welcome": "1.webp",
+  "char-surprise": "2.webp",
+  "char-celebrate": "3.webp",
+  "char-birthday": "4.webp",
+  "char-hug": "5.webp",
+  "char-love": "6.webp",
+  "char-smile": "7.webp",
+  "char-fav": "",
+  "char-there": "",
+  "char-wish": "",
+  "char-dance": "",
+  "char-letter": "",
+  "char-cake": "",
+  "char-final": ""
+}

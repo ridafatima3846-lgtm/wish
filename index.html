@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#ffd4e5">
+    <title>Bubu &amp; Dudu — Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- ============ 1 · WELCOME ============ -->
+    <section class="page active" id="page-1" data-transition="fade">
+        <div class="bg bg-1"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content">
+            <div class="char-wrap size-l c-fx" id="char-welcome"></div>
+            <div class="text-wrap">
+                <h1 class="title-xl">Hey You...</h1>
+                <p class="sub">Aapki mohabbat ne aapke liye kuch banaya hai <span class="emo-heart">❤️</span></p>
+                <p class="tiny-hint">tap the button to begin</p>
+            </div>
+        </div>
+        <div class="scene-photo" data-slot="1"></div>
+    </section>
+
+    <!-- ============ 2 · SECRET SURPRISE ============ -->
+    <section class="page" id="page-2" data-transition="slide">
+        <div class="bg bg-2"></div>
+        <div class="floaters" data-f="stars"></div>
+        <div class="page-content">
+            <div class="text-wrap">
+                <h2 class="title-lg">Shhh...</h2>
+                <p class="sub">Ye ek chhoti si baat hai jo sirf tumhare liye hai <span class="emo-heart">🤫</span></p>
+            </div>
+            <div class="char-wrap size-m c-fx glow-pink" id="char-surprise"></div>
+            <div class="secret-shine" aria-hidden="true"></div>
+        </div>
+        <div class="scene-photo" data-slot="2"></div>
+    </section>
+
+    <!-- ============ 3 · SPECIAL DAY ============ -->
+    <section class="page" id="page-3" data-transition="zoom">
+        <div class="bg bg-3"></div>
+        <div class="floaters" data-f="confetti"></div>
+        <div class="page-content">
+            <div class="text-wrap">
+                <h2 class="title-lg">Aaj ka din koi normal din nahi hai...</h2>
+                <p class="sub">Aaj ka din <strong>tera</strong> hai — aur meri favourite dua hai <span class="emo-heart">❤️</span></p>
+            </div>
+            <div class="char-wrap size-l c-fx" id="char-celebrate"></div>
+        </div>
+        <div class="scene-photo" data-slot="3"></div>
+    </section>
+
+    <!-- ============ 4 · HAPPY BIRTHDAY ============ -->
+    <section class="page" id="page-4" data-transition="fade">
+        <div class="bg bg-4"></div>
+        <div class="floaters" data-f="confetti"></div>
+        <div class="page-content">
+            <h1 class="title-mega rainbow glow-soft">HAPPY BIRTHDAY <span>🎂</span></h1>
+            <div class="char-wrap size-l c-fx" id="char-birthday"></div>
+            <p class="sub">Dua hai meri — teri har subah khush ho aur teri har raat chain bhari ho.</p>
+        </div>
+        <div class="scene-photo" data-slot="4"></div>
+    </section>
+
+    <!-- ============ 5 · VIRTUAL HUG ============ -->
+    <section class="page" id="page-5" data-transition="slide">
+        <div class="bg bg-5"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content compressed">
+            <div class="hug-lines">
+                <p class="hug-line" id="hugL1">Main chahti thi ki aaj main tumhare paas hoti...</p>
+                <p class="hug-line" id="hugL2">Lekin yeh screen itni door bhi nahi kar sakti...</p>
+                <p class="hug-line hug-high" id="hugL3">Toh yeh lo — mera ek chhota sa galaab <span class="emo-heart">🤗</span></p>
+            </div>
+            <div class="char-wrap size-huge c-fx-beat fx-heartring" id="char-hug"></div>
+        </div>
+        <div class="scene-photo" data-slot="5"></div>
+    </section>
+
+    <!-- ============ 6 · YOU MEAN SO MUCH ============ -->
+    <section class="page" id="page-6" data-transition="zoom">
+        <div class="bg bg-6"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content">
+            <div class="glow-heart" aria-hidden="true">❤️</div>
+            <h2 class="title-lg">Tum meri zindagi ke sabse khoobsurat hisse ho.</h2>
+            <div class="char-wrap size-m c-fx glow-pink" id="char-love"></div>
+            <p class="sub">Shabd se bhi zyada — tum ho toh sab kuch hai <span class="emo-heart">❤️</span></p>
+        </div>
+        <div class="scene-photo" data-slot="6"></div>
+    </section>
+
+    <!-- ============ 7 · YOU MAKE ME SMILE ============ -->
+    <section class="page" id="page-7" data-transition="slide">
+        <div class="bg bg-7"></div>
+        <div class="floaters" data-f="bubbles"></div>
+        <div class="page-content">
+            <div class="text-wrap">
+                <h2 class="title-lg">Tumhari muskaan meri sabse badi daulat hai.</h2>
+                <p class="sub">Bura din bhi tumse baat kar ke acha ho jata hai <span class="emo-heart">🥹</span></p>
+            </div>
+            <div class="char-wrap size-l c-fx" id="char-smile"></div>
+            <div class="smile-dots" aria-hidden="true">
+                <span>☺️</span><span>😊</span><span>🙂</span><span>😄</span><span>😊</span>
+            </div>
+        </div>
+        <div class="scene-photo" data-slot="7"></div>
+    </section>
+
+    <!-- ============ 8 · FAVORITE PERSON ============ -->
+    <section class="page" id="page-8" data-transition="fade">
+        <div class="bg bg-8"></div>
+        <div class="floaters" data-f="stars"></div>
+        <div class="page-content">
+            <div class="fav-card">
+                <p class="fav-line" id="favL1">Tum meri sabse pasandeeda insaan ho.</p>
+                <p class="fav-line" id="favL2">Meri sabse pehli notification.</p>
+                <p class="fav-line" id="favL3">Meri har subah ka pehla khayal <span class="emo-heart">❤️</span></p>
+            </div>
+            <div class="char-wrap size-m c-fx glow-pink" id="char-fav"></div>
+        </div>
+        <div class="scene-photo" data-slot="8"></div>
+    </section>
+
+    <!-- ============ 9 · ALWAYS THERE ============ -->
+    <section class="page" id="page-9" data-transition="slide">
+        <div class="bg bg-9"></div>
+        <div class="floaters" data-f="stars"></div>
+        <div class="page-content">
+            <div class="text-wrap">
+                <p class="there-line" id="thereL1">Chahe duniya kuch bhi kar le,</p>
+                <p class="there-line" id="thereL2">main hamesha tumhare liye yahan hoon.</p>
+                <p class="there-line there-high" id="thereL3">Tum kabhi akele nahi rahoge <span class="emo-heart">🫂</span></p>
+            </div>
+            <div class="char-wrap size-m c-fx calm" id="char-there"></div>
+        </div>
+        <div class="scene-photo" data-slot="9"></div>
+    </section>
+
+    <!-- ============ 10 · WHY I LOVE YOU ============ -->
+    <section class="page" id="page-10" data-transition="zoom">
+        <div class="bg bg-10"></div>
+        <div class="floaters" data-f="spark"></div>
+        <div class="page-content">
+            <h2 class="title-lg">Teen baatein jo mujhe tum par qarz kar deti hain <span class="emo-heart">💗</span></h2>
+            <div class="reason-grid">
+                <div class="reason-card" id="reason1">
+                    <span class="reason-no">01</span>
+                    <p class="reason-line">Tumhari muskaan — meri favourite sound.</p>
+                </div>
+                <div class="reason-card" id="reason2">
+                    <span class="reason-no">02</span>
+                    <p class="reason-line">Tumhara dil — sabse honest, sabse saaf.</p>
+                </div>
+                <div class="reason-card" id="reason3">
+                    <span class="reason-no">03</span>
+                    <p class="reason-line">Tumhari feelings — meri zindagi ka sabse khoobsurat chapter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="scene-photo" data-slot="10"></div>
+    </section>
+
+    <!-- ============ 11 · OUR MOMENTS ============ -->
+    <section class="page" id="page-11" data-transition="fade">
+        <div class="bg bg-11"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content compressed">
+            <h2 class="title-lg">Yeh sirf photos nahi — meri duniya ki sabse khoobsurat yaadein hain <span class="emo-heart">📸</span></h2>
+            <div class="album-grid" id="momentGrid"></div>
+            <p class="album-note">Aur bahut saari yaadein baaqi hain... jo humein banana hai <span class="emo-heart">✨</span></p>
+        </div>
+        <div class="scene-photo" data-slot="11"></div>
+    </section>
+
+    <!-- ============ 12 · WISHES FOR YOU ============ -->
+    <section class="page" id="page-12" data-transition="zoom">
+        <div class="bg bg-12"></div>
+        <div class="floaters" data-f="stars"></div>
+        <div class="page-content">
+            <h2 class="title-lg night-title glow-soft">Tumhare liye duaayein <span class="emo-heart">✨</span></h2>
+            <div class="wish-sheet">
+                <p class="wish-line" id="wishL1">Tumhe khushi mile — itni si jo kabhi khatam na ho.</p>
+                <p class="wish-line" id="wishL2">Tumhari har mehnak ka sahi phal mile.</p>
+                <p class="wish-line" id="wishL3">Tumhara dil hamesha sukoon se bhara rahe.</p>
+                <p class="wish-line" id="wishL4">Aur tumhari saari duaayein poori hon <span class="emo-heart">✨</span></p>
+            </div>
+            <div class="char-wrap size-md c-fx" id="char-wish"></div>
+        </div>
+        <div class="scene-photo" data-slot="12"></div>
+    </section>
+
+    <!-- ============ 13 · CELEBRATION ============ -->
+    <section class="page" id="page-13" data-transition="zoom">
+        <div class="bg bg-13"></div>
+        <div class="floaters" data-f="balloons"></div>
+        <div class="floaters" data-f="confetti"></div>
+        <div class="page-content compressed">
+            <div class="celebrate-lines">
+                <p class="cel-line" id="celL1">Hamesha muskurate raho.</p>
+                <p class="cel-line" id="celL2">Hamesha chamakte raho.</p>
+                <p class="cel-line cel-high" id="celL3">Waise hi khoobsurat raho — bilkul jaise tum ho <span class="emo-heart">🎉</span></p>
+            </div>
+            <div class="char-wrap size-huge c-fx-beat" id="char-dance"></div>
+        </div>
+        <div class="scene-photo" data-slot="13"></div>
+    </section>
+
+    <!-- ============ 14 · MY LETTER TO YOU ============ -->
+    <section class="page" id="page-14" data-transition="fade">
+        <div class="bg bg-14"></div>
+        <div class="floaters" data-f="spark"></div>
+        <div class="page-content compressed">
+            <div class="letter-layout">
+                <div class="letter-card" id="letterCard">
+                    <div class="letter-accent"></div>
+                    <h2 class="letter-heading">A Letter From Your Mohabbat 💌</h2>
+                    <div class="letter-body" id="letterBody"></div>
+                    <p class="letter-skip">tap the letter to skip typing</p>
+                </div>
+                <div class="char-wrap size-sm c-fx" id="char-letter"></div>
+            </div>
+        </div>
+        <div class="scene-photo" data-slot="14"></div>
+    </section>
+
+    <!-- ============ 15 · MY KING (birthday boy pics) ============ -->
+    <section class="page" id="page-15" data-transition="slide">
+        <div class="bg bg-15"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content compressed">
+            <h2 class="title-lg">Happy Birthday, Mera King <span class="emo-heart">👑</span></h2>
+            <p class="king-note">Meri aankhon ka sabse pyara banda — tum ho ❤️</p>
+            <div class="king-grid" id="kingGrid"></div>
+            <p class="album-note">Har photo mein bas tum... aur main <span class="emo-heart">📷</span></p>
+        </div>
+        <div class="scene-photo" data-slot="15"></div>
+    </section>
+
+    <!-- ============ 16 · MAKE A WISH ============ -->
+    <section class="page" id="page-16" data-transition="zoom">
+        <div class="bg bg-16"></div>
+        <div class="floaters" data-f="spark"></div>
+        <div class="page-content">
+            <div class="text-wrap">
+                <p class="wish-step" id="step1">Aankhein band karo...</p>
+                <p class="wish-step" id="step2">Ek dua karo...</p>
+                <p class="wish-step" id="step3">Ab meri dua poori hone wali hai <span class="emo-heart">🎂✨</span></p>
+            </div>
+            <div class="candle-glow" id="candleGlow"></div>
+            <div class="char-wrap size-l c-fx" id="char-cake"></div>
+            <div class="burst-zone" id="burstZone"></div>
+        </div>
+        <div class="scene-photo" data-slot="16"></div>
+    </section>
+
+    <!-- ============ 17 · FINAL SURPRISE ============ -->
+    <section class="page" id="page-17" data-transition="fade">
+        <div class="bg bg-17"></div>
+        <div class="floaters" data-f="hearts"></div>
+        <div class="page-content final-page">
+            <p class="final-note" id="finNote">Ek aakhri baat...</p>
+            <div class="final-lines">
+                <p class="fin-line" id="finL1">Tum meri zindagi ka sabse khoobsurat hissa ho.</p>
+                <p class="fin-line" id="finL2">Tum mujhe poori karti ho.</p>
+                <p class="fin-line" id="finL3">Tum sirf tum ho — aur bas.</p>
+            </div>
+            <div class="char-wrap size-huge c-fx-beat fx-heartring" id="char-final"></div>
+            <h1 class="title-mega glow-soft final-title" id="finTitle">Happy Birthday <span class="emo-heart">❤️</span></h1>
+        </div>
+        <div class="scene-photo" data-slot="17"></div>
+    </section>
+
+</div>
+
+<!-- ===== GLOBAL NAVIGATION ===== -->
+<div class="nav" id="navBar">
+    <button class="btn btn-ghost" id="backBtn" aria-label="Back">◂ BACK</button>
+    <button class="btn btn-primary" id="nextBtn" aria-label="Next">NEXT ▸</button>
+</div>
+
+<!-- ===== PROGRESS ===== -->
+<div class="page-indicator" id="pageIndicator">1 / 17</div>
+
+<!-- ===== MUSIC ===== -->
+<button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+
+<audio id="bgMusic" loop preload="none">
+    <source src="assets/music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===== PHOTO LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <img id="lightboxImg" alt="Birthday boy">
+    <p class="lightbox-cap" id="lightboxCap"></p>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
