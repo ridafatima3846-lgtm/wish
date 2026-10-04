@@ -97,6 +97,7 @@ function probeFile(src, kind) {
             a.src = src;
         } else {
             const img = new Image();
+            img.decoding = 'async';
             img.onload  = () => done(true);
             img.onerror = () => done(false);
             img.src = src;
@@ -163,16 +164,18 @@ function renderSticker(container, src) {
         v.muted = true;
         v.loop = true;
         v.playsInline = true;
-        v.preload = 'auto';
+        v.preload = 'metadata';
         v.setAttribute('aria-label', 'Bubu and Dudu, my cute couple');
         v.classList.add('char-video');
         v.addEventListener('error', () => dropSticker(container));
         container.appendChild(v);
+        try { v.play().catch(() => {}); } catch (e) {}
     } else {
         const img = document.createElement('img');
         img.src = src;
         img.alt = 'Bubu and Dudu, my cute couple';
         img.draggable = false;
+        img.loading = 'lazy';
         img.classList.add('char-img');
         img.style.animation = 'none';
         img.addEventListener('error', () => dropSticker(container));
@@ -1029,6 +1032,7 @@ document.addEventListener('wheel', e => {
    INIT
    ------------------------------------------------------------------ */
 document.addEventListener('DOMContentLoaded', () => {
+    // preload only first page chars to avoid heavy loading
     loadPageChars(0);
     spawnFloaters();
     updateUI();
